@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#02070d" />
+    <title>MENTAL — A question for you</title>
+    <link rel="stylesheet" href="./style.css?v=20261002" />
+    <script src="./story.js?v=20261002" defer></script>
+  </head>
+  <body class="story-page" data-question="1">
+    <div class="story-atmosphere" aria-hidden="true">
+      <div class="story-smoke"></div>
+      <div class="story-smoke"></div>
+      <div class="story-smoke"></div>
+      <div class="story-particles" id="story-particles"></div>
+    </div>
+    <div class="transition-veil" aria-hidden="true"></div>
+    <main class="question-stage">
+      <section class="question-content" aria-labelledby="question-title">
+        <p class="story-eyebrow">A memory, just for you</p>
+        <h1 id="question-title">What is your name? A person called you...</h1>
+        <form class="answer-form" novalidate>
+          <label class="visually-hidden" for="answer">Your answer</label>
+          <input id="answer" name="answer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" />
+          <button class="story-submit" type="submit">Continue</button>
+        </form>
+        <p class="answer-feedback" aria-live="polite"></p>
+      </section>
+    </main>
+    <div class="mental-reveal" aria-hidden="true"></div>
+  </body>
+</html>
